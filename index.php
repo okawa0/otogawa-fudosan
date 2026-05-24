@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>サンプル不動産株式会社｜サンプル県サンプル市の不動産売買・賃貸・土地活用</title>
-  <meta name="description" content="サンプル県サンプル市中央の地域密着型不動産。不動産売買・賃貸仲介・物件管理・土地活用・建物解体・外壁塗装まで、サンプルの暮らしを一貫してサポートします。宅建免許 サンプル県知事(0)第00000号。">
+  <title>乙川不動産株式会社｜愛知県岡崎市の不動産売買・賃貸・土地活用</title>
+  <meta name="description" content="愛知県岡崎市中央の地域密着型不動産。不動産売買・賃貸仲介・物件管理・土地活用・建物解体・外壁塗装まで、岡崎の暮らしを一貫してサポートします。宅建免許 愛知県知事(0)第00000号。">
   <meta name="robots" content="index,follow">
   <link rel="icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/favicon.ico'); ?>" type="image/ico">
   <?php wp_head(); ?>
@@ -27,11 +27,11 @@
     <div class="wrap">
       <a href="#" class="logo" data-sec="home">
         <div class="logo__mark">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="サンプル不動産ロゴ">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="乙川不動産ロゴ">
         </div>
         <div class="logo__text">
-          <div class="logo__name">サンプル不動産</div>
-          <div class="logo__sub">SAMPLE REAL ESTATE</div>
+          <div class="logo__name">乙川不動産</div>
+          <div class="logo__sub">OTOGAWA REAL ESTATE</div>
         </div>
       </a>
       <a href="#" class="cta-header" data-sec="contact">無料相談・査定</a>
@@ -298,7 +298,7 @@
           <div class="company__info">
             <dl class="company__info-table">
               <dt class="company__info-term">商号</dt>
-              <dd class="company__info-desc">サンプル不動産株式会社</dd>
+              <dd class="company__info-desc">乙川不動産株式会社</dd>
               <dt class="company__info-term">所在地</dt>
               <dd class="company__info-desc">〒000-0000<br>サンプル県サンプル市中央1丁目2番地3</dd>
               <dt class="company__info-term">代表者</dt>
@@ -547,7 +547,7 @@
           <div class="legal-table">
             <dl class="legal-table__table">
               <dt class="legal-table__term">事業者名</dt>
-              <dd class="legal-table__desc">サンプル不動産株式会社</dd>
+              <dd class="legal-table__desc">乙川不動産株式会社</dd>
               <dt class="legal-table__term">代表者</dt>
               <dd class="legal-table__desc">代表取締役 サンプル 太郎</dd>
               <dt class="legal-table__term">所在地</dt>
@@ -568,7 +568,7 @@
           </div>
 
           <h3 class="legal-section__subtitle">プライバシーポリシー</h3>
-          <p class="legal-section__text">サンプル不動産株式会社（以下「当社」）は、個人情報保護法等の関連法令を遵守し、お客様の個人情報を以下の方針で取り扱います。</p>
+          <p class="legal-section__text">乙川不動産株式会社（以下「当社」）は、個人情報保護法等の関連法令を遵守し、お客様の個人情報を以下の方針で取り扱います。</p>
           <ol class="legal-section__list">
             <li class="legal-section__list-item"><strong>取得・利用目的</strong>：物件のご紹介・契約手続き・アフターサービス・お問い合わせ対応のために必要な範囲で利用します。</li>
             <li class="legal-section__list-item"><strong>第三者提供</strong>：法令に基づく場合または契約履行に必要な場合（金融機関・司法書士等）を除き、第三者に提供しません。</li>
@@ -601,11 +601,11 @@
         <div class="footer__brand">
           <a href="#" class="logo" data-sec="home">
             <div class="logo__mark">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="サンプル不動産ロゴ">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="乙川不動産ロゴ">
             </div>
             <div class="logo__text">
-              <div class="logo__name">サンプル不動産</div>
-              <div class="logo__sub">SAMPLE REAL ESTATE</div>
+              <div class="logo__name">乙川不動産</div>
+              <div class="logo__sub">OTOGAWA REAL ESTATE</div>
             </div>
           </a>
           <p class="footer__brand-text">〒000-0000<br>サンプル県サンプル市中央1丁目2番地3<br>TEL: 000-0000-0000<br>FAX: 000-0000-0001</p>
@@ -645,7 +645,7 @@
           </ul>
         </div>
       </div>
-      <div class="footer__copy">© サンプル不動産株式会社 All Rights Reserved.</div>
+      <div class="footer__copy">© 乙川不動産株式会社 All Rights Reserved.</div>
     </div>
   </footer>
 
