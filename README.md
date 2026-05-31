@@ -5,7 +5,7 @@
 ユーザーが「岡崎の土地と暮らし」に関する情報を探しやすく、サービス内容を理解しやすいように、情報設計・デザイン・コーディングを行いました。
 
 ## URL
-- 公開サイト：(現在非公開)
+- 公開サイト：https://okawa-web.com/works1/
 - GitHub：https://github.com/okawa0/okazaki-fudosan
 
 ## 制作目的

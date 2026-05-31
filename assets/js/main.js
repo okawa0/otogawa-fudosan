@@ -1,157 +1,40 @@
-const PROPERTIES = [{
-        type: "戸建て",
-        title: "中央町ひかり台 中古戸建て 4DK",
-        addr: "岡崎市中央町ひかり台",
-        price: 1320,
-        layout: "4DK",
-        area: "建物98㎡／土地180㎡",
-        year: "築22年"
-      },
-      {
-        type: "戸建て",
-        title: "中央町ひかり台 中古戸建て 2LDK",
-        addr: "岡崎市中央町ひかり台",
-        price: 2950,
-        layout: "2LDK",
-        area: "建物85㎡／土地150㎡",
-        year: "築8年"
-      },
-      {
-        type: "土地",
-        title: "中央町さくら台 売土地",
-        addr: "岡崎市中央町さくら台",
-        price: 1300,
-        layout: "-",
-        area: "土地220㎡",
-        year: "-"
-      },
-      {
-        type: "土地",
-        title: "中央町みどり台 売土地",
-        addr: "岡崎市中央町みどり台",
-        price: 1780,
-        layout: "-",
-        area: "土地280㎡",
-        year: "-"
-      },
-      {
-        type: "土地",
-        title: "中央町ひかり台 売土地（広め）",
-        addr: "岡崎市中央町ひかり台",
-        price: 4000,
-        layout: "-",
-        area: "土地512.39㎡",
-        year: "-"
-      },
-      {
-        type: "戸建て",
-        title: "緑町 中古戸建て 3LDK",
-        addr: "岡崎市緑町",
-        price: 1980,
-        layout: "3LDK",
-        area: "建物92㎡／土地165㎡",
-        year: "築15年"
-      },
-      {
-        type: "賃貸",
-        title: "中央町 賃貸アパート 2DK",
-        addr: "岡崎市中央町",
-        price: 6.8,
-        layout: "2DK",
-        area: "45㎡",
-        year: "築12年",
-        rent: true
-      },
-      {
-        type: "賃貸",
-        title: "岡崎市内 貸事務所",
-        addr: "岡崎市内",
-        price: 18,
-        layout: "事務所",
-        area: "80㎡",
-        year: "-",
-        rent: true
-      },
-      {
-        type: "賃貸",
-        title: "中央町 月極駐車場",
-        addr: "岡崎市中央町",
-        price: 0.8,
-        layout: "駐車場",
-        area: "1台分",
-        year: "-",
-        rent: true
-      },
-      {
-        type: "戸建て",
-        title: "岡崎市北部 新築戸建て 4LDK",
-        addr: "岡崎市北部",
-        price: 3680,
-        layout: "4LDK",
-        area: "建物105㎡／土地180㎡",
-        year: "新築"
-      },
-    ];
-
-    function priceLabel(p) {
-      if (p.rent) return p.price.toLocaleString() + '<span class="property__price-unit">万円/月</span>';
-      return p.price.toLocaleString() + '<span class="property__price-unit">万円</span>';
-    }
-
-    function tagClass(t) {
-      if (t === "土地") return "property__tag--land";
-      if (t === "賃貸") return "property__tag--rent";
-      return "";
-    }
-
-    function renderProperty(p, container) {
-      const div = document.createElement("article");
-      div.className = "property";
-      div.innerHTML = `
-    <div class="property__img">
-      <span class="property__tag ${tagClass(p.type)}">${p.type}</span>
-      <span class="property__img-icon">○</span>
-    </div>
-    <div class="property__body">
-      <h4 class="property__title">${p.title}</h4>
-      <div class="property__addr">${p.addr}</div>
-      <div class="property__price">${priceLabel(p)}</div>
-      <div class="property__spec">
-        <div class="property__spec-item">間取<strong class="property__spec-value">${p.layout}</strong></div>
-        <div class="property__spec-item">面積<strong class="property__spec-value" style="font-size:11px">${p.area.split('／')[0]}</strong></div>
-        <div class="property__spec-item">築年<strong class="property__spec-value">${p.year}</strong></div>
-      </div>
-      <div class="property__actions">
-        <a href="tel:0000000000" class="property__action-link property__tel-btn">電話する</a>
-        <a href="#" class="property__action-link property__mail-btn" onclick="navTo('contact');return false">メール</a>
-      </div>
-    </div>
-  `;
-      container.appendChild(div);
-    }
-
-    function renderFeatured() {
-      const c = document.getElementById("featured-list");
-      c.innerHTML = "";
-      PROPERTIES.slice(0, 4).forEach(p => renderProperty(p, c));
-    }
-
     function filterProperties() {
       const t = document.getElementById("f-type").value;
       const pmax = document.getElementById("f-price").value;
       const k = document.getElementById("f-key").value.trim();
       const c = document.getElementById("property-list");
-      c.innerHTML = "";
       let n = 0;
-      PROPERTIES.forEach(p => {
-        if (t && p.type !== t) return;
-        if (pmax && !p.rent && p.price > parseInt(pmax)) return;
-        if (k && !(p.title.includes(k) || p.addr.includes(k))) return;
-        renderProperty(p, c);
+      let empty = c.querySelector(".property-empty");
+      const cards = c.querySelectorAll(".property");
+
+      if (!empty) {
+        empty = document.createElement("p");
+        empty.className = "property-empty";
+        empty.textContent = "該当する物件がありませんでした。条件を変えて再度お試しください。";
+        empty.hidden = true;
+        c.appendChild(empty);
+      }
+
+      cards.forEach(card => {
+        const type = card.dataset.type || "";
+        const title = card.dataset.title || "";
+        const address = card.dataset.address || "";
+        const price = parseFloat(card.dataset.price || "0");
+        const isRent = card.dataset.rent === "1";
+        let visible = true;
+
+        if (t && type !== t) visible = false;
+        if (pmax && !isRent && price > parseInt(pmax, 10)) visible = false;
+        if (k && !(title.includes(k) || address.includes(k))) visible = false;
+
+        card.hidden = !visible;
+        if (!visible) return;
         n++;
       });
+
       document.getElementById("f-result").textContent = n + "件 該当しました";
-      if (n === 0) c.innerHTML = '<p style="padding:40px;background:var(--paper-light);border:1px solid var(--line);text-align:center;color:var(--muted)">該当する物件がありませんでした。条件を変えて再度お試しください。</p>';
+
+      empty.hidden = n !== 0;
     }
 
     function heroSearch() {
@@ -376,4 +259,4 @@ const PROPERTIES = [{
       if (c.classList.contains("chatbot--open")) renderChat("root");
     }
 
-    renderFeatured();
+    filterProperties();

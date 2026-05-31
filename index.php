@@ -7,7 +7,7 @@
   <title>乙川不動産株式会社｜愛知県岡崎市の不動産売買・賃貸・土地活用</title>
   <meta name="description" content="愛知県岡崎市中央の地域密着型不動産。不動産売買・賃貸仲介・物件管理・土地活用・建物解体・外壁塗装まで、岡崎の暮らしを一貫してサポートします。宅建免許 愛知県知事(0)第00000号。">
   <meta name="robots" content="index,follow">
-  <link rel="icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/favicon.ico'); ?>" type="image/ico">
+  <link rel="icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/favicon.ico?v=1'); ?>" type="image/ico">
   <?php wp_head(); ?>
 </head>
 
@@ -138,7 +138,33 @@
           <div class="sec-head__deco"><span class="sec-head__deco-diamond"></span></div>
         </div>
 
-        <div class="property-grid" id="featured-list"></div>
+        <div class="property-grid" id="featured-list">
+          <?php
+          $featured_properties = new WP_Query(
+            array(
+              'post_type'      => 'property',
+              'posts_per_page' => 4,
+              'meta_query'     => array(
+                array(
+                  'key'     => '_property_featured',
+                  'value'   => '1',
+                  'compare' => '=',
+                ),
+              ),
+            )
+          );
+
+          if ( $featured_properties->have_posts() ) :
+            while ( $featured_properties->have_posts() ) :
+              $featured_properties->the_post();
+              sample_fudosan_render_property_card( get_the_ID() );
+            endwhile;
+            wp_reset_postdata();
+          else :
+            ?>
+            <p class="property-empty">おすすめ物件は現在準備中です。</p>
+          <?php endif; ?>
+        </div>
 
         <div style="text-align:center;margin:24px 0 48px">
           <a href="#" class="btn btn-primary" data-sec="properties">すべての物件を見る →</a>
@@ -183,7 +209,26 @@
         </div>
         <div class="filter-bar__result" id="f-result"></div>
 
-        <div class="property-grid" id="property-list"></div>
+        <div class="property-grid" id="property-list">
+          <?php
+          $properties = new WP_Query(
+            array(
+              'post_type'      => 'property',
+              'posts_per_page' => -1,
+            )
+          );
+
+          if ( $properties->have_posts() ) :
+            while ( $properties->have_posts() ) :
+              $properties->the_post();
+              sample_fudosan_render_property_card( get_the_ID() );
+            endwhile;
+            wp_reset_postdata();
+          else :
+            ?>
+            <p class="property-empty">掲載中の物件は現在準備中です。</p>
+          <?php endif; ?>
+        </div>
 
         <p style="font-size:12px;color:var(--muted);margin:16px 0">
           ※ 掲載物件は一例です。最新情報は <a href="tel:0000000000" style="color:var(--shu);text-decoration:underline">000-0000-0000</a> までお問い合わせください。<br>
