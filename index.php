@@ -7,7 +7,7 @@
   <title>乙川不動産株式会社｜愛知県岡崎市の不動産売買・賃貸・土地活用</title>
   <meta name="description" content="愛知県岡崎市中央の地域密着型不動産。不動産売買・賃貸仲介・物件管理・土地活用・建物解体・外壁塗装まで、岡崎の暮らしを一貫してサポートします。宅建免許 愛知県知事(0)第00000号。">
   <meta name="robots" content="index,follow">
-  <link rel="icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/favicon.ico?v=1'); ?>" type="image/ico">
+  <link rel="icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/favicon1.ico?v=1'); ?>" type="image/ico">
   <?php wp_head(); ?>
 </head>
 
