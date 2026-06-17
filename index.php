@@ -26,7 +26,7 @@
     <div class="wrap">
       <a href="#" class="logo" data-sec="home">
         <div class="logo__mark">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="乙川不動産ロゴ">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="乙川不動産ロゴ" width="744" height="609">
         </div>
         <div class="logo__text">
           <div class="logo__name">乙川不動産</div>
@@ -57,7 +57,7 @@
       <div class="hero">
         <picture class="hero__bg">
           <source media="(max-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-sp.webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-pc.webp" alt="岡崎の風景" loading="eager" fetchpriority="high">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-pc.webp" alt="岡崎の風景" width="3200" height="1312" loading="eager" fetchpriority="high">
         </picture>
         <div class="wrap">
           <div class="hero__content">
@@ -399,7 +399,7 @@
 
         <div class="staff-grid">
           <div class="staff-card">
-            <img class="staff-card__avatar" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/ceo.webp'); ?>" alt="田中 太郎">
+            <img class="staff-card__avatar" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/ceo.webp'); ?>" alt="田中 太郎" width="594" height="605" loading="lazy" decoding="async">
             <div class="staff-card__name">田中 太郎</div>
             <div class="staff-card__role">代表取締役</div>
             <p class="staff-card__text">創業以来、岡崎の不動産取引に携わってまいりました。土地活用と相続対策が得意分野です。</p>
@@ -645,7 +645,7 @@
         <div class="footer__brand">
           <a href="#" class="logo" data-sec="home">
             <div class="logo__mark">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="乙川不動産ロゴ">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.webp" alt="乙川不動産ロゴ" width="744" height="609" loading="lazy" decoding="async">
             </div>
             <div class="logo__text">
               <div class="logo__name">乙川不動産</div>
