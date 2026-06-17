@@ -7,7 +7,6 @@
   <title>乙川不動産株式会社｜愛知県岡崎市の不動産売買・賃貸・土地活用</title>
   <meta name="description" content="愛知県岡崎市中央の地域密着型不動産。不動産売買・賃貸仲介・物件管理・土地活用・建物解体・外壁塗装まで、岡崎の暮らしを一貫してサポートします。宅建免許 愛知県知事(0)第00000号。">
   <meta name="robots" content="index,follow">
-  <link rel="icon" href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/favicon1.ico?v=1'); ?>" type="image/ico">
   <?php wp_head(); ?>
 </head>
 
@@ -154,14 +153,14 @@
             )
           );
 
-          if ( $featured_properties->have_posts() ) :
-            while ( $featured_properties->have_posts() ) :
+          if ($featured_properties->have_posts()) :
+            while ($featured_properties->have_posts()) :
               $featured_properties->the_post();
-              sample_fudosan_render_property_card( get_the_ID() );
+              sample_fudosan_render_property_card(get_the_ID());
             endwhile;
             wp_reset_postdata();
           else :
-            ?>
+          ?>
             <p class="property-empty">おすすめ物件は現在準備中です。</p>
           <?php endif; ?>
         </div>
@@ -218,14 +217,14 @@
             )
           );
 
-          if ( $properties->have_posts() ) :
-            while ( $properties->have_posts() ) :
+          if ($properties->have_posts()) :
+            while ($properties->have_posts()) :
               $properties->the_post();
-              sample_fudosan_render_property_card( get_the_ID() );
+              sample_fudosan_render_property_card(get_the_ID());
             endwhile;
             wp_reset_postdata();
           else :
-            ?>
+          ?>
             <p class="property-empty">掲載中の物件は現在準備中です。</p>
           <?php endif; ?>
         </div>
