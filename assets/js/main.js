@@ -1,8 +1,15 @@
     function filterProperties() {
-      const t = document.getElementById("f-type").value;
-      const pmax = document.getElementById("f-price").value;
-      const k = document.getElementById("f-key").value.trim();
+      const typeField = document.getElementById("f-type");
+      const priceField = document.getElementById("f-price");
+      const keyField = document.getElementById("f-key");
       const c = document.getElementById("property-list");
+
+      if (!typeField || !priceField || !keyField || !c) return;
+
+      const t = typeField.value;
+      const priceRange = priceField.value;
+      const k = keyField.value.trim();
+      const result = document.getElementById("f-result");
       let n = 0;
       let empty = c.querySelector(".property-empty");
       const cards = c.querySelectorAll(".property");
@@ -24,7 +31,15 @@
         let visible = true;
 
         if (t && type !== t) visible = false;
-        if (pmax && !isRent && price > parseInt(pmax, 10)) visible = false;
+        if (priceRange) {
+          if (isRent) {
+            visible = false;
+          } else if (priceRange === "5000-plus" && price <= 5000) {
+            visible = false;
+          } else if (priceRange !== "5000-plus" && price > parseInt(priceRange, 10)) {
+            visible = false;
+          }
+        }
         if (k && !(title.includes(k) || address.includes(k))) visible = false;
 
         card.hidden = !visible;
@@ -32,9 +47,18 @@
         n++;
       });
 
-      document.getElementById("f-result").textContent = n + "件 該当しました";
+      if (result) result.textContent = n + "件 該当しました";
 
       empty.hidden = n !== 0;
+    }
+
+    function setupPropertyFilter() {
+      const controls = document.querySelectorAll("#f-type, #f-price, #f-key");
+
+      controls.forEach(control => {
+        const eventName = control.tagName === "INPUT" ? "input" : "change";
+        control.addEventListener(eventName, filterProperties);
+      });
     }
 
     function heroSearch() {
@@ -259,4 +283,5 @@
       if (c.classList.contains("chatbot--open")) renderChat("root");
     }
 
+    setupPropertyFilter();
     filterProperties();

@@ -96,7 +96,7 @@
               <option value="1500">1,500万円以下</option>
               <option value="3000">3,000万円以下</option>
               <option value="5000">5,000万円以下</option>
-              <option value="99999">5,000万円超</option>
+              <option value="5000-plus">5,000万円超</option>
             </select>
             <label class="hero__search-label">キーワード（地名など）</label>
             <input type="text" id="hero-key" class="hero__search-input" placeholder="例：中央町">
@@ -191,13 +191,13 @@
             </select>
           </div>
           <div class="filter-bar__field">
-            <label class="filter-bar__label">価格上限（売買）</label>
+            <label class="filter-bar__label">価格帯（売買）</label>
             <select id="f-price" class="filter-bar__select">
               <option value="">指定なし</option>
               <option value="1500">1,500万円以下</option>
               <option value="3000">3,000万円以下</option>
               <option value="5000">5,000万円以下</option>
-              <option value="99999">5,000万円超</option>
+              <option value="5000-plus">5,000万円超</option>
             </select>
           </div>
           <div class="filter-bar__field">

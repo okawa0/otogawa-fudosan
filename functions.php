@@ -35,6 +35,29 @@ function sample_fudosan_enqueue_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'sample_fudosan_enqueue_assets' );
 
+remove_action( 'wp_head', 'wp_site_icon', 99 );
+
+function sample_fudosan_print_site_icons() {
+	$webp_icon_path = '/assets/images/favicon-v2.webp';
+	$png_icon_path  = '/assets/images/favicon-v2.png';
+	$webp_icon_url  = add_query_arg(
+		'ver',
+		sample_fudosan_asset_version( $webp_icon_path ),
+		get_stylesheet_directory_uri() . $webp_icon_path
+	);
+	$png_icon_url   = add_query_arg(
+		'ver',
+		sample_fudosan_asset_version( $png_icon_path ),
+		get_stylesheet_directory_uri() . $png_icon_path
+	);
+	?>
+	<link rel="icon" href="<?php echo esc_url( $webp_icon_url ); ?>" type="image/webp">
+	<link rel="icon" href="<?php echo esc_url( $png_icon_url ); ?>" type="image/png">
+	<link rel="apple-touch-icon" href="<?php echo esc_url( $png_icon_url ); ?>">
+	<?php
+}
+add_action( 'wp_head', 'sample_fudosan_print_site_icons', 20 );
+
 function sample_fudosan_print_critical_css() {
 	?>
 	<style id="sample-fudosan-critical-css">
@@ -298,3 +321,9 @@ function sample_fudosan_render_property_card( $post_id ) {
 	</article>
 	<?php
 }
+
+function my_theme_setup()
+{
+	add_theme_support('custom-logo');
+}
+add_action('after_setup_theme', 'my_theme_setup');
