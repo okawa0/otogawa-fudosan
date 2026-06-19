@@ -716,6 +716,10 @@
     box-shadow: 0 8px 24px rgba(26, 41, 64, 0.1);
   }
 
+  &[hidden] {
+    display: none;
+  }
+
   &__img {
     aspect-ratio: 4/3;
     background: var(--text-heading);
