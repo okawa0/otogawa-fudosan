@@ -78,7 +78,8 @@ function sample_fudosan_print_critical_css()
 			--secondary-bright: #9fe8ef;
 			--border: #d4e9ee;
 			--text-muted: #5f7488;
-			--font-serif: "Shippori Mincho", serif;
+			--font-title: "ShipporiMinchoSubset", serif;
+			--font-serif: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "MS PMincho", serif;
 			--font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif
 		}
 
@@ -198,7 +199,7 @@ function sample_fudosan_print_critical_css()
 		}
 
 		.logo__name {
-			font-family: var(--font-serif);
+			font-family: var(--font-title);
 			font-size: 18px;
 			font-weight: 700;
 			color: var(--text-heading);
@@ -320,7 +321,7 @@ function sample_fudosan_print_critical_css()
 		}
 
 		.hero__title {
-			font-family: var(--font-serif);
+			font-family: var(--font-title);
 			font-size: clamp(16px, 5.6vw, 46px);
 			line-height: 1.4;
 			letter-spacing: .04em;

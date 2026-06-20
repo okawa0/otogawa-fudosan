@@ -14,7 +14,9 @@ $bp-md: 768px;
   --secondary-bright: #9fe8ef;
   --border: #d4e9ee;
   --text-muted: #5f7488;
-  --font-serif: "Shippori Mincho", serif;
+  --font-title: "ShipporiMinchoSubset", serif;
+  --font-serif: "Yu Mincho", YuMincho, "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", "MS PMincho", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic",
     YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }

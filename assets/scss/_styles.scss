@@ -105,7 +105,7 @@
   }
 
   &__name {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 18px;
     font-weight: 700;
     color: var(--text-heading);
@@ -334,7 +334,7 @@
   }
 
   &__title {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: clamp(16px, 5.6vw, 46px);
     line-height: 1.4;
     letter-spacing: 0.04em;
@@ -446,7 +446,7 @@
   }
 
   &__search-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 20px;
     color: var(--text-heading);
     margin-bottom: 6px;
@@ -580,7 +580,7 @@
   }
 
   &__title {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 24px;
     font-weight: 700;
     color: var(--text-heading);
@@ -673,7 +673,7 @@
   }
 
   &__title {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 20px;
     font-weight: 700;
     color: var(--text-heading);
@@ -790,7 +790,7 @@
   }
 
   &__title {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-size: 16px;
     font-weight: 700;
     color: var(--text-heading);
@@ -1010,7 +1010,7 @@
   }
 
   &__title {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 22px;
     font-weight: 700;
     color: var(--text-heading);
@@ -1065,7 +1065,7 @@
   }
 
   &__title {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 20px;
     font-weight: 700;
     color: var(--text-heading);
@@ -1209,7 +1209,7 @@
   }
 
   &__card-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 18px;
     color: var(--secondary-bright);
     margin-bottom: 12px;
@@ -1308,7 +1308,7 @@
   }
 
   &__name {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 18px;
     font-weight: 700;
     color: var(--text-heading);
@@ -1482,7 +1482,7 @@
   }
 
   &__side-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 20px;
     color: var(--primary);
     margin-bottom: 18px;
@@ -1542,7 +1542,7 @@
   }
 
   &__form-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 20px;
     color: var(--text-heading);
     margin-bottom: 8px;
@@ -1667,7 +1667,7 @@
   margin: 24px 0 48px;
 
   &__subtitle {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 20px;
     color: var(--text-heading);
     margin: 24px 0 12px;
@@ -1797,7 +1797,7 @@
     align-items: center;
 
     strong {
-      font-family: var(--font-serif);
+      font-family: var(--font-title);
       font-size: 14px;
       letter-spacing: 0.08em;
     }
@@ -1909,7 +1909,7 @@
   }
 
   &__nav-heading {
-    font-family: var(--font-serif);
+    font-family: var(--font-title);
     font-size: 14px;
     color: var(--secondary-bright);
     margin-bottom: 14px;
