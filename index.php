@@ -56,8 +56,30 @@
 
       <div class="hero">
         <picture class="hero__bg">
-          <source media="(max-width: 640px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero-sp.webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-pc.webp" alt="岡崎の風景" width="1600" height="656" loading="eager" fetchpriority="high">
+          <source
+            media="(max-width: 640px)"
+            type="image/avif"
+            srcset="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hero-sp-v2.avif'); ?>"
+            width="640"
+            height="1029">
+          <source
+            media="(max-width: 640px)"
+            type="image/webp"
+            srcset="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hero-sp-v2.webp'); ?>"
+            width="640"
+            height="1029">
+          <source
+            type="image/avif"
+            srcset="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hero-pc-v2.avif'); ?>"
+            width="1600"
+            height="656">
+          <img
+            src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hero-pc-v2.webp'); ?>"
+            alt="岡崎の風景"
+            width="1600"
+            height="656"
+            loading="eager"
+            fetchpriority="high">
         </picture>
         <div class="wrap">
           <div class="hero__content">
