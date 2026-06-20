@@ -79,7 +79,7 @@ function sample_fudosan_print_critical_css()
 			--border: #d4e9ee;
 			--text-muted: #5f7488;
 			--font-serif: "Shippori Mincho", serif;
-			--font-sans: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
+			--font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif
 		}
 
 		*,
