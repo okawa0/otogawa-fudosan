@@ -404,8 +404,7 @@
                 title="乙川不動産株式会社の所在地"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen
-              ></iframe>
+                allowfullscreen></iframe>
               <div class="company__map-text">
                 <strong class="company__map-label">最寄駅</strong><br>
                 名鉄「岡崎中央駅」より車で約15分／JR「岡崎駅」より車で約20分<br>
@@ -434,19 +433,19 @@
             <p class="staff-card__text">創業以来、岡崎の不動産取引に携わってまいりました。土地活用と相続対策が得意分野です。</p>
           </div>
           <div class="staff-card">
-            <div class="staff-card__avatar">花</div>
+            <img class="staff-card__avatar" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/president.webp'); ?>" alt="佐藤 花子" width="594" height="605" loading="lazy" decoding="async">
             <div class="staff-card__name">佐藤 花子</div>
             <div class="staff-card__role">取締役社長</div>
             <p class="staff-card__text">会社の経営を支え、お客様が安心してご相談いただける環境づくりに尽力しております。</p>
           </div>
           <div class="staff-card">
-            <div class="staff-card__avatar">一</div>
+            <img class="staff-card__avatar" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/executive-officer.webp'); ?>" alt="鈴木 一郎" width="594" height="605" loading="lazy" decoding="async">
             <div class="staff-card__name">鈴木 一郎</div>
             <div class="staff-card__role">役員 / 専任宅地建物取引士</div>
             <p class="staff-card__text">賃貸物件のご紹介、契約手続き、入居後のサポートまで担当。お気軽にご相談ください。</p>
           </div>
           <div class="staff-card">
-            <div class="staff-card__avatar">管</div>
+            <img class="staff-card__avatar" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/property-management-staff.webp'); ?>" alt="管理担当" width="594" height="605" loading="lazy" decoding="async">
             <div class="staff-card__name">管理担当</div>
             <div class="staff-card__role">物件管理 / 工務担当</div>
             <p class="staff-card__text">賃貸管理、解体工事、塗装工事の窓口を担当。建物の維持管理についてご相談ください。</p>
