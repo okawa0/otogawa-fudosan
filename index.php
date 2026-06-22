@@ -398,12 +398,19 @@
               <p style="margin-top:14px;text-align:right;font-family:var(--serif);font-size:15px;color:var(--gold-light)">代表取締役　田中 太郎</p>
             </div>
             <div class="company__map-card">
-              <div class="company__map-placeholder">岡崎市中央 — Google Maps</div>
+              <iframe
+                class="company__map"
+                src="https://www.google.com/maps?q=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%A4%AE1%E4%B8%81%E7%9B%AE2%E7%95%AA%E5%9C%B03&amp;output=embed"
+                title="乙川不動産株式会社の所在地"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
               <div class="company__map-text">
                 <strong class="company__map-label">最寄駅</strong><br>
                 名鉄「岡崎中央駅」より車で約15分／JR「岡崎駅」より車で約20分<br>
                 <strong style="display:inline-block;margin-top:8px">駐車場</strong> 来客用スペースあり<br>
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=sample-city" target="_blank" rel="noopener" style="color:var(--shu);text-decoration:underline;display:inline-block;margin-top:8px;font-size:12px">→ Googleマップで見る</a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%A4%AE1%E4%B8%81%E7%9B%AE2%E7%95%AA%E5%9C%B03" target="_blank" rel="noopener" style="color:var(--shu);text-decoration:underline;display:inline-block;margin-top:8px;font-size:12px">→ Googleマップで見る</a>
               </div>
             </div>
           </div>
