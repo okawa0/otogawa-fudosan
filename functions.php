@@ -44,6 +44,7 @@ function sample_fudosan_print_site_icons()
 {
 	$webp_icon_path = '/assets/images/favicon-v2.webp';
 	$png_icon_path  = '/assets/images/favicon-v2.png';
+	$ico_icon_path  = '/assets/images/favicon-v2.ico';
 	$webp_icon_url  = add_query_arg(
 		'ver',
 		sample_fudosan_asset_version($webp_icon_path),
@@ -54,7 +55,13 @@ function sample_fudosan_print_site_icons()
 		sample_fudosan_asset_version($png_icon_path),
 		get_stylesheet_directory_uri() . $png_icon_path
 	);
+	$ico_icon_url   = add_query_arg(
+		'ver',
+		sample_fudosan_asset_version($ico_icon_path),
+		get_stylesheet_directory_uri() . $ico_icon_path
+	);
 ?>
+	<link rel="icon" href="<?php echo esc_url($ico_icon_url); ?>" type="image/x-icon">
 	<link rel="icon" href="<?php echo esc_url($webp_icon_url); ?>" type="image/webp">
 	<link rel="icon" href="<?php echo esc_url($png_icon_url); ?>" type="image/png">
 	<link rel="apple-touch-icon" href="<?php echo esc_url($png_icon_url); ?>">
