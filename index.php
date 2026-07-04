@@ -251,8 +251,8 @@
           <?php endif; ?>
         </div>
 
-        <p style="font-size:12px;color:var(--muted);margin:16px 0">
-          ※ 掲載物件は一例です。最新情報は <a href="tel:0000000000" style="color:var(--shu);text-decoration:underline">000-0000-0000</a> までお問い合わせください。<br>
+        <p style="font-size:12px;color:var(--text-muted);margin:16px 0">
+          ※ 掲載物件は一例です。最新情報は <a href="tel:0000000000" style="color:var(--primary);text-decoration:underline">000-0000-0000</a> までお問い合わせください。<br>
           ※ 価格は税込表示。仲介手数料は別途必要となります。
         </p>
       </div>
@@ -370,7 +370,7 @@
               <dt class="company__info-term">代表者</dt>
               <dd class="company__info-desc">代表取締役　田中 太郎<br>取締役社長　佐藤 花子<br>役員　鈴木 一郎</dd>
               <dt class="company__info-term">電話番号</dt>
-              <dd class="company__info-desc"><a href="tel:0000000000" style="color:var(--shu);text-decoration:underline">000-0000-0000</a></dd>
+              <dd class="company__info-desc"><a href="tel:0000000000" style="color:var(--primary);text-decoration:underline">000-0000-0000</a></dd>
               <dt class="company__info-term">FAX</dt>
               <dd class="company__info-desc">000-0000-0001</dd>
               <dt class="company__info-term">営業時間</dt>
@@ -395,7 +395,7 @@
             <div class="company__card">
               <h4 class="company__card-title">代表ごあいさつ</h4>
               <p class="company__card-text">当社は岡崎の地で長年にわたり、皆さまの「住まい」と「土地」のご相談をお受けしてまいりました。地域に根を下ろすからこそ見える物件の良さ、相場の機微、そして暮らしの文脈。一件一件のご縁を大切に、これからも誠実に向き合ってまいります。</p>
-              <p style="margin-top:14px;text-align:right;font-family:var(--serif);font-size:15px;color:var(--gold-light)">代表取締役　田中 太郎</p>
+              <p style="margin-top:14px;text-align:right;font-family:var(--font-serif);font-size:15px;color:var(--text-heading)">代表取締役　田中 太郎</p>
             </div>
             <div class="company__map-card">
               <iframe
@@ -409,7 +409,7 @@
                 <strong class="company__map-label">最寄駅</strong><br>
                 名鉄「岡崎中央駅」より車で約15分／JR「岡崎駅」より車で約20分<br>
                 <strong style="display:inline-block;margin-top:8px">駐車場</strong> 来客用スペースあり<br>
-                <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%A4%AE1%E4%B8%81%E7%9B%AE2%E7%95%AA%E5%9C%B03" target="_blank" rel="noopener" style="color:var(--shu);text-decoration:underline;display:inline-block;margin-top:8px;font-size:12px">→ Googleマップで見る</a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%B2%A1%E5%B4%8E%E5%B8%82%E4%B8%AD%E5%A4%AE1%E4%B8%81%E7%9B%AE2%E7%95%AA%E5%9C%B03" target="_blank" rel="noopener" style="color:var(--primary);text-decoration:underline;display:inline-block;margin-top:8px;font-size:12px">→ Googleマップで見る</a>
               </div>
             </div>
           </div>
@@ -481,7 +481,7 @@
           </div>
         </div>
 
-        <p style="font-size:12px;color:var(--muted);margin:0 0 24px">※ 個人情報保護のため、お客様情報の一部を抜粋・改変して掲載しています。</p>
+        <p style="font-size:12px;color:var(--text-muted);margin:0 0 24px">※ 個人情報保護のため、お客様情報の一部を抜粋・改変して掲載しています。</p>
       </div>
     </section>
 
