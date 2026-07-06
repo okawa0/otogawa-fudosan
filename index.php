@@ -599,6 +599,9 @@
                 <label><input type="checkbox" required> <a href="#" class="form-privacy__link" data-sec="legal">プライバシーポリシー</a>に同意する<span class="form-row__req">*</span></label>
               </div>
               <button type="submit" class="form-submit">送信する</button>
+              <p class="form-note">
+                ※ このお問い合わせフォームはポートフォリオ用のダミーです。<br>送信内容はメール送信・保存されません。
+              </p>
               <div id="submit-result" class="submit-result"></div>
             </form>
           </div>
